@@ -21,13 +21,13 @@ const PostCard = ({ post }) => {
             <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
                 <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
                     <img
-                        alt={post.author.name}
+                        alt={post.author.nom}
                         height="30px"
                         width="30px"
                         className="align-middle rounded-full"
                         src={post.author.photo.url}
                     />
-                    <p className="inline align-middle text-gray-700 ml-2 text-lg">{post.author.name}</p>
+                    <p className="inline align-middle text-gray-700 ml-2 text-lg">{post.author.nom}</p>
                 </div>
                 <div className="font-medium text-gray-700">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
