@@ -46,3 +46,5 @@ export async function getStaticPaths() {
     fallback: true,
   };
 }
+
+//il faut imperativement ajouter les meta tags open graph
