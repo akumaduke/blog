@@ -1,8 +1,17 @@
+import { useEffect, useState } from 'react';
 import { FeaturedPosts } from '../sections/index';
 import { PostCard, Categories, PostWidget } from '../components';
 import { getPosts } from '../services';
 
-export default function Home({ posts }) {
+export default function Home() {
+
+  const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        getPosts()
+            .then((newPosts) => setPosts(newPosts))
+    }, []);
+
   return (
     <div className="container mx-auto px-10 mb-8">
       <FeaturedPosts />
